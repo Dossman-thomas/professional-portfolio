@@ -1,0 +1,85 @@
+:root {
+
+}
+
+header {
+
+  background-color: rgb(148, 251, 169);
+  color: white;
+
+  padding: 1rem;
+
+  height: 15vh;
+  /* width: 100%; */
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: auto; */
+
+
+}
+
+h1 {
+  margin-left: .5vw;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: .5vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+figure {
+  background-color: rgb(218, 68, 68);
+  height: 75vh;
+}
+
+figcaption {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  background-color: azure;
+  padding: 1% 3%;
+}
+
+section {
+  background-color: cadetblue;
+  height: 80vh;
+  display: flex;
+
+  border-bottom: 2px solid white;
+}
+
+footer {
+  background-color: white;
+  height: 50px;
+}
+
+.subtitle-rel {
+  position: relative;
+}
+
+.l-cont {
+  background-color: rgb(36, 177, 57);
+  width: 20%;
+  padding: 3%;
+  border-right: 5px solid white;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.r-content {
+  width: 80%;
+}
+
+
+
