@@ -9,7 +9,7 @@ header {
 
   padding: 1rem;
 
-  height: 15vh;
+  height: 10vh;
   /* width: 100%; */
 
 
@@ -52,7 +52,7 @@ figcaption {
 
 section {
   background-color: cadetblue;
-  height: 80vh;
+
   display: flex;
 
   border-bottom: 2px solid white;
@@ -69,17 +69,53 @@ footer {
 
 .l-cont {
   background-color: rgb(36, 177, 57);
-  width: 20%;
+
   padding: 3%;
-  border-right: 5px solid white;
+  border-right: 5px solid rgb(0, 0, 0);
   
   display: flex;
   justify-content: center;
+  align-items: center;
+  
+  flex: 0 1 15%;
 }
 
 .r-content {
+  padding: 2%;
+
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
 }
+
+.work-links {
+  background-color:rgb(148, 251, 169);
+  border: 3px solid black;
+  flex: 1 0 47%;
+
+  min-height: 100px;
+  max-height: 100px;
+
+  position: relative;
+}
+
+#work {
+  height: 60vh;
+}
+
+#featured {
+  background-color: blue;
+  flex: 2 0 100%;
+
+  min-height: 200px;
+  max-height: 250px;
+  
+}
+
+
 
 
 
