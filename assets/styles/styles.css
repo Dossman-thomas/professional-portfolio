@@ -1,9 +1,13 @@
+/* CSS VARIABLES */
+
 :root {
   --dark-bg: black;
   --light-bg: rgb(234, 234, 234);
   --font-c: rgb(242, 242, 242);
   --accents: red;
 }
+
+/* SEMANTIC ELEMENT SELECTORS */
 
 header {
 
@@ -58,10 +62,26 @@ section {
   border-bottom: 2px solid white;
 }
 
-/* footer {
-  background-color: white;
-  height: 50px;
-} */
+
+footer {
+  background-color: var(--dark-bg);
+  color: var(--font-c);
+  height: auto;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  width: 95%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* CLASS SELECTORS */
 
 .subtitle-rel {
   position: relative;
@@ -99,32 +119,16 @@ section {
   position: relative;
 }
 
-.contact-section {
-  background-color: var(--dark-bg);
-  color: var(--font-c);
-  height: auto;
-  padding: 4%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  gap: 4%;
-}
-
 .contact-info {
-  margin: 3%;
+  margin: 0 3%;
 }
 
-.contact-section ul {
-  width: 95%;
+/* ID SELECTORS */
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+#featured {
+  flex: 2 0 99%;
+  margin-bottom: 3%;
 }
-
-
 
 #work2,
 #work3 {
@@ -133,11 +137,6 @@ section {
 
 #work {
   height: auto;
-}
-
-#featured {
-  flex: 2 0 99%;
-  margin-bottom: 3%;
 }
 
 
@@ -170,7 +169,7 @@ section {
     border-bottom: 5px solid var(--accents);
   }
 
-  .contact-section ul {
+  footer ul {
     display: flex;
     flex-direction: column;
     text-align: center;
