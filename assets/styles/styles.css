@@ -1,15 +1,18 @@
-/* :root {
-
-} */
+:root {
+  --dark-bg: black;
+  --light-bg: rgb(234, 234, 234);
+  --font-c: rgb(242, 242, 242);
+  --accents: red;
+}
 
 header {
 
-  background-color: rgb(148, 251, 169);
-  color: white;
+  background-color: var(--dark-bg);
+  color: var(--font-c);
 
-  padding: 1rem;
+  padding: 2rem;
 
-  height: 10vh;
+  height: 15vh;
 
 
   display: flex;
@@ -30,11 +33,11 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--font-c);
 }
 
 figure {
-  background-color: rgb(218, 68, 68);
+  background-color: white;
   height: 55vh;
 }
 
@@ -43,12 +46,12 @@ figcaption {
   right: 20px;
   bottom: 20px;
 
-  background-color: azure;
+  background-color: var(--accents);
   padding: 1% 3%;
 }
 
 section {
-  background-color: cadetblue;
+  background-color: var(--light-bg);
 
   display: flex;
 
@@ -65,16 +68,16 @@ section {
 }
 
 .l-content {
-  background-color: rgb(36, 177, 57);
+  background-color: var(--light-bg);
 
   padding: 3%;
-  border-right: 5px solid rgb(0, 0, 0);
+  border-right: 5px solid var(--accents);
   
   display: flex;
   justify-content: center;
   align-items: center;
   
-  flex: 0 1 15%;
+  flex: 0 1 10%;
 }
 
 .r-content {
@@ -96,6 +99,33 @@ section {
   position: relative;
 }
 
+.contact-section {
+  background-color: var(--dark-bg);
+  color: var(--font-c);
+  height: auto;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  gap: 4%;
+}
+
+.contact-info {
+  margin: 3%;
+}
+
+.contact-section ul {
+  width: 95%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
 #work2,
 #work3 {
   margin-bottom: 3%;
@@ -106,7 +136,6 @@ section {
 }
 
 #featured {
-  background-color: blue;
   flex: 2 0 99%;
   margin-bottom: 3%;
 }
@@ -138,10 +167,10 @@ section {
 
   .l-content {
     border-right: none;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid var(--accents);
   }
 
-  .contact-info li {
+  .contact-section ul {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -151,7 +180,7 @@ section {
 
 /* for responsiveness on mobile screens */
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 460px){
 
   h1 {
     margin-bottom: 6%;
