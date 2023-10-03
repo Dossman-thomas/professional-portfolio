@@ -27,11 +27,12 @@ header {
 
 h1 {
   margin-left: .5vw;
+  font-size: 3rem;
 }
 
 li {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: .5vw;
 }
 
@@ -173,6 +174,10 @@ footer ul {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+
+  #contact ul li a {
+    font-size: 1rem;
   }
 
 }
